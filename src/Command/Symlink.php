@@ -55,11 +55,7 @@ class Symlink extends Command
 
         $locator = new FileLocator(getcwd());
         $loader = new BoxfileLoader($locator);
-        $content = $loader->load($boxfile);
-
-        $processor = new Processor();
-        $configuration = new \derhasi\boxfile\Config\Definition\BoxfileConfiguration();
-        $processedContent = $processor->processConfiguration($configuration, $content);
+        $conf = $loader->loadObject($boxfile);
 
         $output->writeln(sprintf('Env: %s, Boxfile: %s, Docroot: %s', $environment, $boxfile, $docroot));
     }
