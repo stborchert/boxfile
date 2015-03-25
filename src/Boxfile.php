@@ -25,4 +25,23 @@ class Boxfile {
         $this->envSpecificFiles = $boxfile_data['env_specific_files'];
     }
 
+    /**
+     * Retrieves environement specific file mappings.
+     *
+     * @param string $environment
+     *   Environment indicator, such as 'stage', 'live', 'local'.
+     *
+     * @return array
+     *   Key value array, with target being the key and source being the value.
+     */
+    public function getEnvironmentSpecificFiles($environment)
+    {
+        $return = array();
+        foreach ($this->envSpecificFiles as $target => $data) {
+            if (isset($data[$environment])) {
+                $return[$target] = $data[$environment];
+            }
+        }
+        return $return;
+    }
 }
