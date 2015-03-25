@@ -1,0 +1,20 @@
+{
+    "name": "derhasi/boxfile",
+    "description": "Command to handle freistil Boxfiles anywhere",
+    "require": {
+        "symfony/yaml": "2.*",
+        "symfony/console": "2.*"
+    },
+    "license": "GPLv2+",
+    "authors": [
+        {
+            "name": "Johannes Haseitl",
+            "email": "johannes@undpaul.de"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "derhasi\\boxfile\\": "src/"
+      }
+    }
+}
