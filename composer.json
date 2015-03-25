@@ -3,7 +3,8 @@
     "description": "Command to handle freistil Boxfiles anywhere",
     "require": {
         "symfony/yaml": "2.*",
-        "symfony/console": "2.*"
+        "symfony/console": "2.*",
+        "symfony/config": "~2.6"
     },
     "license": "GPLv2+",
     "authors": [

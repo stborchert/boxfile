@@ -2,6 +2,9 @@
 
 namespace derhasi\boxfile\Command;
 
+use derhasi\boxfile\Config\Loader\BoxfileLoader;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\Config\Loader\FileLoader;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -49,6 +52,10 @@ class Symlink extends Command
         $boxfile = $input->getOption('boxfile');
         $docroot = $input->getOption('docroot');
 
-        $output->writeln(sprintf('Env: %s, Boxfile: %s, Docroot: %s', $environment, $boxfile, $docroot));
+        $locator = new FileLocator(getcwd());
+        $loader = new BoxfileLoader($locator);
+        $content = $loader->load($boxfile);
+
+        $output->writeln(sprintf('Env: %s, Boxfile: %s, Docroot: %s, \n Content: %s', $environment, $boxfile, $docroot));
     }
 }
