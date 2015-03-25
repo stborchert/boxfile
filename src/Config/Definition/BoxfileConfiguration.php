@@ -17,7 +17,7 @@ class BoxfileConfiguration implements ConfigurationInterface {
 
         $children = $rootNode->children();
 
-        $children->scalarNode('version')->end();
+        $children->floatNode('version')->min(1)->max(1)->end();
         $children->arrayNode('shared_folders')->prototype('scalar')->end();
         $children->arrayNode('env_specific_files')
           ->useAttributeAsKey('target')
