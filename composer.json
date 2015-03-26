@@ -6,6 +6,7 @@
         "symfony/console": "2.*",
         "symfony/config": "~2.6"
     },
+    "type": "cli",
     "license": "GPLv2+",
     "authors": [
         {
