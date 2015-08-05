@@ -14,7 +14,7 @@ composer require derhasi/boxfile
 
 Creating symlinks for environment specific paths.
 ```sh
-./vendor/bin/boxfile [env]
+./vendor/bin/boxfile symlink [env] --boxfile=Boxfile --docroot=docroot
 ```
 
 ## Example boxfile
