@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "990f662bfa85d38d8661e73587935a8e",
+    "hash": "98d520881c16039283d4fb6d48c79f6e",
+    "content-hash": "e9fea07857000d337536a2db825dbc7e",
     "packages": [
         {
             "name": "derhasi/symlinker",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/derhasi/symlinker.git",
-                "reference": "21afac27037cc319b3f81714e0a5b21968971629"
+                "reference": "4b116316592038dbf49b872d26406c102d9b0581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/derhasi/symlinker/zipball/21afac27037cc319b3f81714e0a5b21968971629",
-                "reference": "21afac27037cc319b3f81714e0a5b21968971629",
+                "url": "https://api.github.com/repos/derhasi/symlinker/zipball/4b116316592038dbf49b872d26406c102d9b0581",
+                "reference": "4b116316592038dbf49b872d26406c102d9b0581",
                 "shasum": ""
             },
             "require": {
@@ -44,19 +45,20 @@
                     "email": "johannes@undpaul.de"
                 }
             ],
-            "time": "2015-08-05 09:21:19"
+            "description": "A PHP library and CLI tool to create symlinks",
+            "time": "2015-11-20 16:38:49"
         },
         {
             "name": "symfony/config",
             "version": "v2.7.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Config.git",
+                "url": "https://github.com/symfony/config.git",
                 "reference": "6c905bbed1e728226de656e4c07d620dfe9e80d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/6c905bbed1e728226de656e4c07d620dfe9e80d9",
+                "url": "https://api.github.com/repos/symfony/config/zipball/6c905bbed1e728226de656e4c07d620dfe9e80d9",
                 "reference": "6c905bbed1e728226de656e4c07d620dfe9e80d9",
                 "shasum": ""
             },
@@ -101,12 +103,12 @@
             "version": "v2.7.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console.git",
+                "url": "https://github.com/symfony/console.git",
                 "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
                 "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
                 "shasum": ""
             },
@@ -158,12 +160,12 @@
             "version": "v2.7.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
+                "url": "https://github.com/symfony/filesystem.git",
                 "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
                 "reference": "2d7b2ddaf3f548f4292df49a99d19c853d43f0b8",
                 "shasum": ""
             },
