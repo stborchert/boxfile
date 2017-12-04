@@ -4,7 +4,7 @@
     "require": {
         "symfony/yaml": "2.*",
         "symfony/console": "2.* || 3.*",
-        "symfony/config": "~2.6",
+        "symfony/config": "~2.6 || ~3.2.0",
         "derhasi/symlinker": ">=0.2.2"
     },
     "type": "cli",
